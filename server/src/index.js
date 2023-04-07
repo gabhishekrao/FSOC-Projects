@@ -1,8 +1,8 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import cors from 'cors';
 
+import cors from 'cors';
 
 import postRoutes from './route/posts.js';
 
@@ -18,7 +18,7 @@ app.use('/posts', postRoutes);
 const CONNECTION_URL = 'mongodb+srv://gabhishek:GAbhishekPassword@gabhishek01.dq23z80.mongodb.net/SocialMediaApp'
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(CONNECTION_URL, { useNewUrlParser: true })
+mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => console.log(`Our server is running on PORT: ${PORT}`)))
     .catch((error) => console.log(error.message))
 

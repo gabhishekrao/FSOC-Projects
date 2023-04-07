@@ -5,6 +5,7 @@ import Post from './Post/Post'
 import useStyles from './style.js'
 import posts from "../../reducers/posts";
 
+
 const Posts = () => {
     const post = useSelector((state) => state.posts)
     const classes = useStyles()
@@ -20,4 +21,4 @@ const Posts = () => {
     )
 }
 
-export default Posts
+export default Posts;
