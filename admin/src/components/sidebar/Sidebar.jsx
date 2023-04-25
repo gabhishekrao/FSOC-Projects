@@ -52,7 +52,7 @@ const Sidebar = () => {
             </li>
           </Link>
           <li>
-            <LocalShippingIcon className="icon" />
+            {/* <LocalShippingIcon className="icon" />
             <span>Delivery</span>
           </li>
           <p className="title">USEFUL</p>
@@ -84,7 +84,7 @@ const Sidebar = () => {
           </li>
           <li>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span>Logout</span> */}
           </li>
         </ul>
       </div>
